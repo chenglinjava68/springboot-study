@@ -1,0 +1,32 @@
+一:kafka的安装及其测试:
+
+链接:
+
+二:kafka测试时出现问题总结:
+
+//前提:环境Centos7,kafka版本号kafka_2.11-1.0.0,zookeeper版本号zookeeper-3.4.10
+
+1:org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+//出现该问题,大概原因是producer client的Jar包版本与kafka集群版本,不兼容!
+<!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+<dependency>
+	<groupId>org.apache.kafka</groupId>
+	<artifactId>kafka-clients</artifactId>
+	<version>1.0.0</version>
+</dependency>
+-->即该依赖的版本和你安装的kafka版本号不一样
+
+2:Setting key.serializer in publish kafka leads to org.apache.kafka.common.errors.SerializationException
+//出现该问题:设置的kafka指定消息key和消息体的编解码方式为org.apache.kafka.common.serialization.StringSerializer，
+而你在使用生产者发送消息时,例如kafkaTemplate.send("test", message);,使用的是实体,它不能正常序列化,应该将实体转换为
+String类型;例如:kafkaTemplate.send("test", message.toString());
+
+3:WARN Connection to node -1 could not be established.
+//大概是kafka的server.properties配置文件问题,在我整合的过程中,需要将配置文件里加上如下语句:
+port=9092
+#host.name配置阿里云内网ip地址
+host.name=172.16.49.229
+#advertised.host.name配置外网地址
+advertised.host.name=120.79.29.188
+//在测试时确定开启9092端口(kafka服务默认是9092)或者先关闭防火墙(最好)
+

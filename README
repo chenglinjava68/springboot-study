@@ -1,0 +1,11 @@
+Springboot系列学习
+
+1:springboot整合redis
+
+2:springboot整合kafka(消息中间件)
+
+3:springboot常用注解
+(3-1):使用@ConfigurationProperties读取*.properties结尾的配置文件,常用来将配置转换为java bean的方式.
+//如果在测试的过程中,你的配置转换java bean打印还是为null.可以在配置类加上@EnableConfigurationProperties
+注解,该注解是让@ConfigurationProperties注解生效的.
+(3-2):@PropertySource注解加载指定的以properties结尾的配置文件
