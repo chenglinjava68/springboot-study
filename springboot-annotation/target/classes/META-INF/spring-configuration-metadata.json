@@ -1,0 +1,32 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.ley.springboot.annotation.configurationProperties.DatasourceProperties",
+      "name": "datasource",
+      "type": "com.ley.springboot.annotation.configurationProperties.DatasourceProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.ley.springboot.annotation.configurationProperties.DatasourceProperties",
+      "name": "datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ley.springboot.annotation.configurationProperties.DatasourceProperties",
+      "name": "datasource.jdbc-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ley.springboot.annotation.configurationProperties.DatasourceProperties",
+      "name": "datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ley.springboot.annotation.configurationProperties.DatasourceProperties",
+      "name": "datasource.username",
+      "type": "java.lang.String"
+    }
+  ]
+}

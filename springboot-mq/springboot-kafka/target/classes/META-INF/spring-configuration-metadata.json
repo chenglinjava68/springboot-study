@@ -1,0 +1,11 @@
+{
+  "hints": [],
+  "groups": [],
+  "properties": [
+    {
+      "name": "server.servlet.context-path",
+      "description": "A description for 'server.servlet.context-path'",
+      "type": "java.lang.String"
+    }
+  ]
+}

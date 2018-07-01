@@ -1,0 +1,85 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.SimpleRedisProperties",
+      "name": "redis",
+      "type": "com.ley.springboot.redis.configuration.properties.SimpleRedisProperties"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.RedisPoolProperties",
+      "name": "redis",
+      "type": "com.ley.springboot.redis.configuration.properties.RedisPoolProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.SimpleRedisProperties",
+      "name": "redis.database",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.SimpleRedisProperties",
+      "name": "redis.host-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.RedisPoolProperties",
+      "name": "redis.max-idle",
+      "description": "连接池最大空闲数\n *",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.RedisPoolProperties",
+      "name": "redis.max-total",
+      "description": "连接池的最大数据库连接数\n *",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.RedisPoolProperties",
+      "name": "redis.max-wait-millis",
+      "description": "最大建立连接等待时间\n *",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.RedisPoolProperties",
+      "name": "redis.min-evictable-idle-time-millis",
+      "description": "逐出连接的最小空闲时间 默认1800000毫秒(30分钟)\n *",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.RedisPoolProperties",
+      "name": "redis.num-tests-per-eviction-run",
+      "description": "每次逐出检查时 逐出的最大数目 如果为负数就是 : 1\/abs(n), 默认3\n *",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.SimpleRedisProperties",
+      "name": "redis.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.RedisPoolProperties",
+      "name": "redis.test-on-borrow",
+      "description": "是否在从池中取出连接前进行检验,如果检验失败,则从池中去除连接并尝试取出另一个\n *",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.RedisPoolProperties",
+      "name": "redis.test-while-idle",
+      "description": "在空闲时检查有效性, 默认false\n *",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.RedisPoolProperties",
+      "name": "redis.time-between-eviction-runs-millis",
+      "description": "逐出扫描的时间间隔(毫秒) 如果为负数,则不运行逐出线程, 默认-1\n *",
+      "type": "java.lang.Long"
+    },
+    {
+      "sourceType": "com.ley.springboot.redis.configuration.properties.SimpleRedisProperties",
+      "name": "redis.timeout",
+      "type": "java.lang.Integer"
+    }
+  ]
+}
