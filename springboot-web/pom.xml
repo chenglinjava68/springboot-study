@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.ley</groupId>
+    <artifactId>springboot-study</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>springboot-web</artifactId>
+  <packaging>pom</packaging>
+  <name>springboot的web相关</name>
+  <description>springboot的restful风格,swagger支持</description>
+  <modules>
+  	<module>springboot-mybatis</module>
+  </modules>
+</project>

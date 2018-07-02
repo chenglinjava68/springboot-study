@@ -59,5 +59,7 @@
 	<modules>
 		<module>springboot-mq</module>
 		<module>springboot-annotation</module>
+		<module>springboot-datasource</module>
+		<module>springboot-web</module>
 	</modules>
 </project>
